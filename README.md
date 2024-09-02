@@ -8,6 +8,9 @@ Each post folder contains the source code related to my answers.
 - One folder per subreddit (`r/xxx`)
 - Inside, one folder per post ID
 - Each subreddit has its own `README.md` that lists all posts with details
+- 
+## Subreddits
+- [r/dotnet](./dotnet) - [View on Reddit](https://www.reddit.com/r/dotnet/)
 
 ## About me
 You can visit my [u/GillesTourreau](https://www.reddit.com/user/GillesTourreau/) Reddit profile.
