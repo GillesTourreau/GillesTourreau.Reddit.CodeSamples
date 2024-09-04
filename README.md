@@ -10,6 +10,7 @@ Each post folder contains the source code related to my answers.
 - Each subreddit has its own `README.md` that lists all posts with details
 - 
 ## Subreddits
+- [r/csharp](./csharp) - [View on Reddit](https://www.reddit.com/r/csharp/)
 - [r/dotnet](./dotnet) - [View on Reddit](https://www.reddit.com/r/dotnet/)
 
 ## About me
