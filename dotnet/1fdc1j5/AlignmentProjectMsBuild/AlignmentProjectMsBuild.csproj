@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Configurations>Debug;Release;Blabla 2025 Truc</Configurations>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="$(Configuration.Contains('2025'))">
+      <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
+  <Target Name="Gto" BeforeTargets="Build">
+    <Warning Text="GTO: $(TargetFramework)" />
+  </Target>
+
+</Project>

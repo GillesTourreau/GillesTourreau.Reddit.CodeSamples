@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Configurations>Debug;Release;Blabla 2025 Truc</Configurations>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="$(Configuration.Contains('2025'))">
+      <PropertyGroup>
+        <TargetFramework>net8.0-windows</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+
+  <Target Name="Gto" BeforeTargets="Clean">
+    <Warning Text="GTO: $(TargetFramework) / $(Configuration.Contains(&quot;2025&quot;))" />
+  </Target>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AlignmentProjectMsBuild\AlignmentProjectMsBuild.csproj" />
+  </ItemGroup>
+
+</Project>
