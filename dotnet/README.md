@@ -13,3 +13,4 @@ Each entry corresponds to a Reddit post with the related code snippets.
 | 2024-09-09 | [Pipeline precompile options](https://www.reddit.com/r/dotnet/comments/1fcivu0/pipeline_precompile_options/) | [1fcivu0](./1fcivu0)          |
 | 2024-09-10 | [Alignment of versioning between main project and test project](https://www.reddit.com/r/dotnet/comments/1fdc1j5/alignment_of_versioning_between_main_project_and/) | [1fdc1j5](./1fdc1j5)          |
 | 2024-09-13 | [Having trouble with multiple cascade paths](https://www.reddit.com/r/dotnet/comments/1ffnsv9/having_trouble_with_multiple_cascade_paths/) | [1ffnsv9](./1ffnsv9)          |
+| 2024-09-17 | [How to Change the Base Path of a Blazor Server App in an ASP.NET Core Web API Project?](https://www.reddit.com/r/dotnet/comments/1fj8nz1/how_to_change_the_base_path_of_a_blazor_server/) | [1fj8nz1](./1fj8nz1)          |
