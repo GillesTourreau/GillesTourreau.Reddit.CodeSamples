@@ -10,6 +10,7 @@ Each post folder contains the source code related to my answers.
 - Each subreddit has its own `README.md` that lists all posts with details
 - 
 ## Subreddits
+- [r/Blazor](./Blazor) - [View on Reddit](https://www.reddit.com/r/Blazor/)
 - [r/csharp](./csharp) - [View on Reddit](https://www.reddit.com/r/csharp/)
 - [r/dotnet](./dotnet) - [View on Reddit](https://www.reddit.com/r/dotnet/)
 

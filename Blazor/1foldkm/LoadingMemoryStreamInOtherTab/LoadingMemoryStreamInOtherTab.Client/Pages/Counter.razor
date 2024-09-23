@@ -1,0 +1,51 @@
+﻿@page "/display-log-other-tab"
+@using System.Text
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Display log in other tab</PageTitle>
+
+<h1>Display log in other tab</h1>
+
+<button @onclick="DisplayInOtherTab">Open the log in other tab</button>
+
+<script type="text/javascript">
+    window.displayLog = async (stream) => {
+
+        // Create blob in the browser
+        const arrayBuffer = await stream.arrayBuffer();
+        const blob = new Blob([arrayBuffer], { type: "text/html" });
+
+        // Create an URL to access to the blob
+        url = URL.createObjectURL(blob);
+
+        // Open the blob
+        window.open(url, '_blank').focus();
+
+        // Delete the URL object.
+        URL.revokeObjectURL(url);
+    }
+</script>
+
+@code {
+    private async Task DisplayInOtherTab()
+    {
+        // Gets the content of the log (the stream)
+        var stream = await this.GetLogAsync();
+        using var log = stream;
+
+        // Create "DotNetStreamReference" (to marshall the Stream to a JS Stream)
+        using var streamReference = new DotNetStreamReference(log, true);
+
+        // Call the JS download
+        await JSRuntime.InvokeVoidAsync("displayLog", streamReference);
+    }
+
+    private async Task<Stream> GetLogAsync()
+    {
+        // Here we create a MemoryStream with a static string content for example.
+        // You should retrieve the log to display from an API or Blob Storage for example.
+        var log = new MemoryStream(Encoding.UTF8.GetBytes("<html><body><h1>The log here</h1>\r\n<h2>Blabla...</h2></body></html>"));
+
+        return await Task.FromResult(log);
+    }
+}
