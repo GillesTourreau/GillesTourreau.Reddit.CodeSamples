@@ -13,6 +13,8 @@ Each post folder contains the source code related to my answers.
 - [r/Blazor](./Blazor) - [View on Reddit](https://www.reddit.com/r/Blazor/)
 - [r/csharp](./csharp) - [View on Reddit](https://www.reddit.com/r/csharp/)
 - [r/dotnet](./dotnet) - [View on Reddit](https://www.reddit.com/r/dotnet/)
+- [r/entityframework](./entityframework) - [View on Reddit](https://www.reddit.com/r/entityframework/)
+- [r/VisualStudio](./VisualStudio) - [View on Reddit](https://www.reddit.com/r/VisualStudio/)
 
 ## About me
 You can visit my [u/GillesTourreau](https://www.reddit.com/user/GillesTourreau/) Reddit profile.
